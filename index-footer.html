@@ -7,49 +7,13 @@
     <meta name="keywords" content="USDD Cryptocurrency Exchange 慶福元 加密貨幣 交換" />
     <meta name="description" content="USDD Exchange - 慶福元交換 @ 2021" />
     <link href="content/footer.css" rel="stylesheet" type="text/css" />	
-    <script src="content/Scripts/jquery.min.js"></script>
-    <script src="content/Scripts/jquery.i18n.properties.min.js"></script>
-    <script>	
-	 var count = 0;
-     var everysec = function() {
-	  count++;  	  
-      document.getElementById('counter').innerHTML = count;
-     }
-    setInterval(everysec, 1000);  
-    function loadProperties(lang) {   
-		    parent.lang = lang;       
-            $.i18n.properties({
-                name: 'strings',     
-                path: 'content/i18n/',    
-                mode: 'map',
-                language: lang,      
-                callback: function () {
-                    $("[data-locale]").each(function () {
-                        console.log($(this).data("locale"));
-                        $(this).html($.i18n.prop($(this).data("locale")));
-
-                    });
-                }
-            });
-    }
-    window.addEventListener('load', async () => {
-     loadProperties(navigator.language.toLowerCase());
-	 sel_langs.value = navigator.language.toLowerCase();	 
-    })	
-    </script>
 </head>
 <body>
+</body>
     <div id="footer_wrapper">
         <div id="footer">
-         <select id="sel_langs" onChange="javascript:loadProperties(this.value);">
-          <option value="en-us">English</option>
-          <option value="zh-cn">简体中文</option>
-          <option value="zh-tw">繁體中文</option>
-         </select>  
-            <span id="wnlang"></span>  
-            <label data-locale="Footer-Elapsed">Elapsed</label> <span id="counter"></span> <label data-locale="Footer-Seconds">sec.</label> <a href="index.html" target="_parent"><label data-locale="Footer-Organized">Organized</label> 2021 © USDDex</a> 			
+            <a href="index.html" target="_parent">Organized 2021 © USDD Exchange  </a>
         </div>
-    </div>	
-</body>
+    </div>
 </html>
 
