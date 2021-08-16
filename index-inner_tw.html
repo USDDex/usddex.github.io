@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>USDD Exchange - 慶福元交換 @ 2021 </title>
+    <meta name="keywords" content="USDD Cryptocurrency Exchange 慶福元 加密貨幣 交換" />
+    <meta name="description" content="USDD Exchange - 慶福元交換 @ 2021" />
+    <link href="content/style.css" rel="stylesheet" type="text/css" />
+    <link href="content/skin-win8/ui.easytree.css" rel="stylesheet" class="skins" type="text/css" />
+    <link href="content/code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />	
+    <script src="content/Scripts/google-code-prettify/run_prettify.js"></script>		
+    <!--[if lt IE 8]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.js"></script>
+    <![endif]-->
+
+    <script src="content/bundles/jquery5f53?v=2NjoCxW84kovonXnDyWWMKXUYMGWEgCl9gX39ZnpZqs1"></script>
+    <script src="content/Scripts/jquery.easytree.min.js"></script>
+    <script src="content/Scripts/jquery.i18n.properties.min.js"></script>	
+	<script>
+	 parent.score = 0;
+	 var home_lang;
+     var everysec_home = function() { 
+	  if(home_lang !== parent.lang){
+	   home_lang = parent.lang;
+	   loadProperties_home(parent.lang);
+       switch (parent.lang) {
+        case 'zh-cn':
+         parent.curloc = '首页';
+         break;
+        case 'zh-tw':
+         parent.curloc = '首頁';
+         break;	 
+        case 'en-us':
+		default:
+         parent.curloc = 'Home';
+       }	   
+	  }
+     }
+     setInterval(everysec_home, 1000); 	
+     function loadProperties_home(lang) {  
+            $.i18n.properties({
+                name: 'strings',     
+                path: 'content/i18n/',    
+                mode: 'map',
+                language: lang,      
+                callback: function () {
+                    $("[data-locale]").each(function () {
+                        console.log($(this).data("locale"));
+                        $(this).html($.i18n.prop($(this).data("locale")));
+
+                    });
+                }
+            });
+     }
+     window.addEventListener('load', function () {
+      loadProperties_home(parent.lang);    
+     })	 
+	</script>
+</head>
+<body>
+    <div id="body_wrapper">
+        <div id="wrapper">
+
+            <div id="header">
+                <div id="header_content">
+                    <div id="site_title">
+                        <a href="index.html" target="_parent">USDD Exchange</a>
+                        <p> - 慶福元 交換</p>
+                    </div>
+
+                </div>
+            </div> <!-- end of header -->
+
+            <div id="main_top"></div>
+            <div id="main">
+                <span id="side_top"></span><span id="side_bottom"></span>
+
+                <div id="sidebar">
+
+                    <div class="sidebar_box">
+
+                        <div class="sb_title"><label data-locale="Home-Menu">Menu</label></div>
+                        <div class="sb_content">
+                            <div id="main_menu">
+                                <ul>
+                                    <li><a href="index.html" target="_parent" class="current">首頁</a></li>
+                                    <li class="isFolder">
+                                        Video 影片
+                                        <ul>
+                                            <li><a href="video.html" target="_blank"> USDDex APP 桌上版本實際運行影片</a></li>
+                                        </ul>
+                                    </li>									
+                                    <li class="isFolder">
+                                        Games 遊戲 (無對戰-自由試玩)
+                                        <ul>
+                                            <li class="isFolder">
+                                                Puzzle & Arcade 益智
+                                                <ul>
+                                                    <li><a href="https://showcase.codethislab.com/games/falling_cubes/" target="_blank">Falling Cubes 掉落方塊</a></li>												
+                                                    <li><a href="https://showcase.codethislab.com/games/space_adventure_pinball/" target="_blank">Space Adventure Pinball太空探險彈珠台</a></li>													
+                                                    <li><a href="https://showcase.codethislab.com/games/battleship_war/" target="_blank">Battleship War 戰艦戰爭</a></li>	
+                                                </ul>
+                                            </li>										
+                                            <li class="isFolder">
+                                                Sport 運動
+                                                <ul>
+                                                    <li><a href="https://showcase.codethislab.com/games/penalty_kicks/" target="_blank">Penalty Kicks 踢罰球</a></li>												
+                                                    <li><a href="https://showcase.codethislab.com/games/rugby_rush/" target="_blank">Rugby Rush 美足沖球</a></li>													
+                                                    <li><a href="https://showcase.codethislab.com/games/baseball_pro/" target="_blank">Baseball Pro 打棒球</a></li>	
+                                                    <li><a href="https://showcase.codethislab.com/games/downhill_ski/" target="_blank">Downhill_Ski 滑雪避障賽</a></li>														
+                                                    <li><a href="https://showcase.codethislab.com/games/slalom_ski/" target="_blank">Slalom Ski 滑雪區道賽</a></li>	
+                                                </ul>
+                                            </li>										
+                                            <li class="isFolder">
+                                                Casino 娛樂場
+                                                <ul>
+                                                    <li><a href="https://showcase.codethislab.com/games/horse_racing/" target="_blank">Horse Racing 賽馬</a></li>
+													<li><a href="https://showcase.codethislab.com/games/greyhound_racing/" target="_blank">Greyhound Racing 賽狗</a></li>
+													<li><a href="https://showcase.codethislab.com/games/blackjack/" target="_blank">Blackjack 21點</a></li>
+													<li><a href="https://showcase.codethislab.com/games/baccarat/" target="_blank">Baccarat 百家樂</a></li>
+													<li><a href="https://showcase.codethislab.com/games/pai_gow_poker/" target="_blank">Pai Gow Poker 牌九撲克</a></li>
+													<li><a href="https://showcase.codethislab.com/games/craps/" target="_blank">Craps 雙骰子/花旗骰</a></li>
+                                                    <li><a href="https://showcase.codethislab.com/games/slot_the_fruits/" target="_blank">Slot Machine-Fruits 水果拉霸</a></li>
+                                                    <li><a href="https://showcase.codethislab.com/games/roulette/" target="_blank">3D Roulette 輪盤</a></li>
+                                                    <li><a href="https://showcase.codethislab.com/games/jacks_or_better/" target="_blank">Jacks or Better 傑克或更大</a></li>
+                                                </ul>
+                                            </li>										
+                                        </ul>
+                                    </li>
+									<li class="isFolder">
+                                        USDD 討論區
+										<ul>
+										 <li><a href="https://usdd.boards.net" target="_blank">USDD 論壇</a></li>			 
+										</ul> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sb_bottom"></div>
+                    </div>
+
+                    <div class="cleaner"></div>
+                </div> <!-- end of sidebar -->
+                
+
+<div id="content">
+
+    <div class="content_box">
+        <h2> <label data-locale="Home-Welcome-Msg">  </label> </h2> 
+        <h4> <label data-locale="Home-Core-Msg">
+            
+            </label>			
+        </h4>
+        <h4> <label data-locale="Home-Wallet-Msg">
+            
+            </label>			
+        </h4>
+		<p></p>
+        <h4><label data-locale="Home-GameMine-Msg">
+            
+            </label>		
+        </h4>
+		<p></p>
+
+        <h4><b><label data-locale="Home-GameMineFeature-Msg"> </label></b></h4>
+        <ul><h5>
+            <li><label data-locale="Home-GMF-Msg01"> </label></li><p></p>
+            <li><label data-locale="Home-GMF-Msg02"> </label></li><p></p>
+            <li><label data-locale="Home-GMF-Msg03"> </label></li><p></p>
+            <li><label data-locale="Home-GMF-Msg04"> </label></li><p></p>
+            <li><label data-locale="Home-GMF-Msg05"> </label></li><p></p>
+            <li><label data-locale="Home-GMF-Msg06"> </label></li><p></p>
+			</h5>
+        </ul>
+        <h4><b><label data-locale="Home-DevRoadmap-Msg"> </label></b></h4>
+        <ul><h5>
+            <li><label data-locale="Home-DR-Msg01"> </label></li><p></p>
+            <li><label data-locale="Home-DR-Msg02"> </label></li><p></p>
+            <li><label data-locale="Home-DR-Msg03"> </label></li><p></p>
+            <li><label data-locale="Home-DR-Msg04"> </label></li><p></p>
+            <li><label data-locale="Home-DR-Msg05"> </label></li><p></p>
+			</h5>			
+        </ul>		
+    </div>
+</div>
+
+
+                <div class="cleaner"></div>
+            </div>
+
+            <div id="main_bottom">
+            </div>
+
+        </div> <!-- end of wrapper -->
+    </div>
+	
+    <script>
+        function stateChangedMain(nodes, nodesJson) {
+            var t = nodes[0].text;
+            $.cookie('main_menu', nodesJson, { path: '/' });
+        }
+
+        function getId(nodes, pathName) {
+            var i = 0;
+            for (i = 0; i < nodes.length; i++) {
+                if (nodes[i].href && nodes[i].href.toLowerCase() == pathName) {
+                    return nodes[i].id;
+                }
+                if (nodes[i].children && nodes[i].children.length > 0) {
+                    var id = getId(nodes[i].children, pathName);
+                    if (id) {
+                        return id;
+                    }
+                }
+            }
+        }
+        //alert($.cookie('main_menu'));
+        var mainMenu = $('#main_menu').easytree({
+            data: $.cookie('main_menu'),
+            stateChanged: stateChangedMain
+        });
+
+        var pathName = window.location.pathname.toLowerCase();
+        var allNodes = mainMenu.getAllNodes();
+        var currentId = getId(allNodes, pathName);
+        if (currentId) {
+            mainMenu.activateNode(currentId);
+        }   
+    </script>
+</body>
+
+</html>
+
