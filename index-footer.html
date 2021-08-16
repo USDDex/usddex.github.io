@@ -9,48 +9,11 @@
     <link href="content/footer.css" rel="stylesheet" type="text/css" />	
     <script src="content/Scripts/jquery.min.js"></script>
     <script src="content/Scripts/jquery.i18n.properties.min.js"></script>
-    <script src="content/Scripts/web3.min.js"></script>	
     <script>	
 	 var count = 0;
      var everysec = function() {
 	  count++;  	  
       document.getElementById('counter').innerHTML = count;
-      web3.eth.getAccounts(function(err, accounts){
-       if (accounts.length == 0) document.getElementById('logged-in').innerHTML = 'x';
-       else { document.getElementById('logged-in').innerHTML = '√'; parent.account = accounts[0]; } 
-      });
-	  parent.networkId = web3.version.network;
-	  switch (parent.networkId) {
-       case "1":
-        document.getElementById('net-id').innerHTML = "ETH Main" + "-ID:" + parent.networkId; 
-        break;
-      case "2":
-        document.getElementById('net-id').innerHTML = "Morden Test" + "-ID:" + parent.networkId;
-        break;
-      case "3":
-        document.getElementById('net-id').innerHTML = "Ropsten Test" + "-ID:" + parent.networkId;
-        break;
-      case "4":
-        document.getElementById('net-id').innerHTML = "Rinkeby Test" + "-ID:" + parent.networkId;
-        break;
-      case "5":
-        document.getElementById('net-id').innerHTML = "Goerli Test" + "-ID:" + parent.networkId;
-        break;		
-      case "42":
-        document.getElementById('net-id').innerHTML = "Kovan Test" + "-ID:" + parent.networkId;
-        break;
-      case "56":
-        document.getElementById('net-id').innerHTML = "BSC Main" + "-ID:" + parent.networkId;
-        break;
-      case "97":
-        document.getElementById('net-id').innerHTML = "BSC Test" + "-ID:" + parent.networkId;
-        break;
-      case "5777":
-        document.getElementById('net-id').innerHTML = "Ganache Test" + "-ID:" + parent.networkId;
-        break;		
-      default:
-        document.getElementById('net-id').innerHTML = "Unknown" + "-ID:" + parent.networkId;
-      }
      }
     setInterval(everysec, 1000);  
     function loadProperties(lang) {   
@@ -71,16 +34,7 @@
     }
     window.addEventListener('load', async () => {
      loadProperties(navigator.language.toLowerCase());
-	 sel_langs.value = navigator.language.toLowerCase();
-     if (window.ethereum) {
-        window.web3 = new Web3(ethereum);
-        try {
-            await ethereum.enable();
-			document.getElementById('metamask-status').innerHTML = '√';
-        } catch (error) {
-			document.getElementById('metamask-status').innerHTML = 'x';
-        }
-     }	 
+	 sel_langs.value = navigator.language.toLowerCase();	 
     })	
     </script>
 </head>
@@ -93,9 +47,7 @@
           <option value="zh-tw">繁體中文</option>
          </select>  
             <span id="wnlang"></span>  
-            <label data-locale="Footer-Elapsed">Elapsed</label> <span id="counter"></span> <label data-locale="Footer-Seconds">sec.</label> <a href="index.html" target="_parent"><label data-locale="Footer-Organized">Organized</label> 2021 © USDDex</a> @ <!--<span id="loc"> </span> <label data-locale="Footer-Score">Score</label> <span id="score"> </span>--> 
-			MetaMask <span id="metamask-status"></span> <label data-locale="Footer-Logged-in">Logged-in</label> <span id="logged-in"></span>
-		    <label data-locale="Footer-Net-ID">Network</label> <span id="net-id"></span>			
+            <label data-locale="Footer-Elapsed">Elapsed</label> <span id="counter"></span> <label data-locale="Footer-Seconds">sec.</label> <a href="index.html" target="_parent"><label data-locale="Footer-Organized">Organized</label> 2021 © USDDex</a> 			
         </div>
     </div>	
 </body>
