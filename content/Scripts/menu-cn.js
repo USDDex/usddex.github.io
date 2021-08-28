@@ -16,7 +16,7 @@ document.write( '                                    </li>									\n' );
 document.write( '                                    <li class=\"isFolder\">\n' );
 document.write( '                                        关于\n' );
 document.write( '                                        <ul>\n' );
-document.write( '                                            <li><a href=\"index-inner-features_tw.html\"> 游戏挖矿特色、发展蓝图</a></li>\n' );
+document.write( '                                            <li><a href=\"index-inner-features_cn.html\"> 游戏挖矿特色、发展蓝图</a></li>\n' );
 document.write( '											<li><a href=\"video.html\" target=\"_blank\"> 桌上版本运行影片</a></li>\n' );
 document.write( '                                        </ul>\n' );
 document.write( '                                    </li>																		\n' );
