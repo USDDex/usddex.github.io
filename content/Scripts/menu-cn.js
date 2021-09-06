@@ -66,7 +66,7 @@ document.write( '                                            </li>\n' );
 document.write( '                                            <li class=\"isFolder\">\n' );
 document.write( '                                                交易所 \n' );
 document.write( '                                                <ul>\n' );
-document.write( '												   <li><a href=\"https://uniswap.org/\" target=\"_blank\">Uniswap</a></li>\n' );
+document.write( '												   <li><a href=\"https://usddex.github.io/exchange/\" target=\"_blank\">USDDex @ BSC 币安</a></li>\n' );
 document.write( '                                                </ul>\n' );
 document.write( '                                            </li>												\n' );
 document.write( '                                            <li class=\"isFolder\">\n' );

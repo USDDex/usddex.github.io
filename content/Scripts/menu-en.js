@@ -66,7 +66,7 @@ document.write( '                                            </li>\n' );
 document.write( '                                            <li class=\"isFolder\">\n' );
 document.write( '                                                Exchange \n' );
 document.write( '                                                <ul>\n' );
-document.write( '												   <li><a href=\"https://uniswap.org/\" target=\"_blank\">Uniswap</a></li>\n' );
+document.write( '												   <li><a href=\"https://usddex.github.io/exchange/\" target=\"_blank\">USDDex @ BSC Binance</a></li>\n' );
 document.write( '                                                </ul>\n' );
 document.write( '										    </li>\n' );
 document.write( '                                            <li class=\"isFolder\">\n' );
