@@ -39,11 +39,11 @@
     },  
     {
       "name": "Tether USD",
-      "address": "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd",
+      "address": "0x86De0963fC1879cf44bEfBd04a47C6b5610B121d",
       "symbol": "USDT",
       "decimals": 18,
       "chainId": 97,
-      "logoURI": "https://usddex.github.io/tokens/0x337610d27c682E347C9cD60BD4b3b107C9d34dDd.png"
+      "logoURI": "https://usddex.github.io/tokens/0x86De0963fC1879cf44bEfBd04a47C6b5610B121d.png"
     }
   ]
 }
